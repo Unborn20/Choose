@@ -1,0 +1,108 @@
+html{    
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  display: flex;
+  margin: auto;
+  padding: auto;
+  justify-content: center;
+}
+
+main{
+  /*border: 1px solid black;*/    
+  height: 20rem;
+  margin-top: 10rem;
+  padding: 2rem;
+  width: 50rem;    
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-section{
+  display: flex;
+  justify-content: space-between;
+  width: 20vh;
+}
+
+.button-styles{
+  background-color: rgb(235, 11, 216);
+  border: none;
+  color: rgb(250, 245, 245);
+  display: flex;
+  font-size: large;
+  height: 2rem;
+  outline: none;
+  padding-left: 1.1rem;
+  padding-top: 0.4rem;
+  width: 4rem;
+}
+
+.m-3{
+  margin: 0.5rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.f-1{
+  font-size: 2.5rem;
+}
+
+/* The Modal (background) */
+.modal {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  height: 40vh;
+  margin: auto;
+  padding: 20px;
+  width: 30%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
